@@ -1,0 +1,35 @@
+{
+  "name": "serverless-sqlite-db",
+  "version": "1.0.0",
+  "description": "host sqlite-db in csf",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonofmagic/serverless-sqlite-db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonofmagic/serverless-sqlite-db/issues"
+  },
+  "homepage": "https://github.com/sonofmagic/serverless-sqlite-db#readme",
+  "devDependencies": {
+    "@types/http-server": "^0.12.1",
+    "dotenv": "^16.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "tencentcloud-sdk-nodejs": "^4.0.293"
+  },
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "serve": "^13.0.2"
+  }
+}
