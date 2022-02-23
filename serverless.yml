@@ -1,0 +1,25 @@
+component: scf # (必选) 组件名称，在该实例中为scf
+name: serve-app # (必选) 组件实例名称。
+
+inputs:
+  src:
+    src: ./
+    exclude:
+      - 'node_modules/**'
+      - '.env'
+      - 'scripts/**'
+  type: web
+  entryFile: app.js
+  runtime: Nodejs16.13
+  region: ap-shanghai
+  installDependency: true
+  events:
+    - apigw:
+        parameters:
+          protocols:
+            - http
+            - https
+          environment: release
+          endpoints:
+            - path: /
+              method: ANY
